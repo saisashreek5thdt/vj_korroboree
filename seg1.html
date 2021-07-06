@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korroboree Vieo Journal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/grids/grid.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <a href="" class="trigger"><span></span></a>
+        <div class="circle  crcl card-yellow "></div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="intro.html">Intro</a></li>
+              <li><a href="seg1.html"><span class="active">Segment 1 </span></a></li>
+              <li><a href="seg2.html">Segment 2</a></li>
+              <li><a href="seg3.html">Segment 3</a></li>
+              <li><a href="seg4.html">Segment 4</a></li>
+              <li><a href="seg5.html">Segment 5</a></li>
+              <li><a href="seg6.html">Segment 6</a></li>
+              <li><a href="seg7.html">Segment 7</a></li>
+              <li><a href="seg8.html">Segment 8</a></li>
+              <li><a href="seg9.html">Segment 9</a></li>
+              <li><a href="seg10.html">Segment 10</a></li>
+              <li><a href="seg11.html">Segment 11</a></li>
+              <li><a href="seg12.html">Segment 12</a></li>
+              <li><a href="seg13.html">Segment 13</a></li>
+              <li><a href="seg14.html">Segment 14</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="wrapper bg-grey-light">
+    
+          <div class="row" align="left">
+            <div class="logo"><img src="assets/images/logo2.png"></div>
+          </div>
+    
+          <div class="row justify-content-center">
+    
+            <div class="col-lg-7 col-mg-7">
+    
+              <div class="plyr__video-embed" id="player">
+                <video class="video_size" controls onended="setTimeout(ends, 1000)">
+                  <source src="assets/videos/Segment 1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+    
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-7">
+                <div class="seg_back bg-grey-dark font_tahoma ">
+                    <center class="txt_wht txt_seg">Segment 1</center>
+                    <center class="txt-yellow txt2_seg">Dealing with the brain’s pre-programmed “Negativity Bias”
+                    </center>
+                </div>
+            </div>
+        </div>
+          <div class="row justify-content-end" style="margin-top:7rem;">
+            <div class="col-md-1 offset-md-10">
+              <div  class="nxt_pre_btn crcl card-yellow" style="margin-left: 30px;" >
+                <a href="index.html">
+                    <i class="fa fa-chevron-up txt-grey-dark "></i>
+                  </a>
+              </div>
+            </div>
+            <div class="col-md-1">
+             <div class="nxt_pre_btn crcl card-yellow">
+                <a href="quet1.html">
+                    <i class="fa fa-chevron-down txt-grey-dark "></i>
+                </a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/myscript.js"></script>
+    <script src="assets/grids/js/jquery-3.5.1.slim.js"></script>
+    <script src="assets/grids/js/popper.js"></script>
+    <script src="assets/grids/js/bootstrap.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+        });
+
+
+        function ends() {
+            window.location.href = "quet1.html"
+
+            // document.getElementById("qnum").innerHTML = "1/2";
+            // document.getElementById("second_row").style.display = "none";
+            // document.getElementById("info").style.display = "block";
+        }
+    </script>
+    <script>
+        // DOM Loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            const player = new Plyr("#player", {
+                title: "Spring",
+                controls: [
+                    "play-large",
+                    "play",
+                    "progress",
+                    "current-time",
+                    "duration",
+                    "mute",
+                    "volume",
+                    "settings",
+                    "pip",
+                    "airplay",
+                    "fullscreen"
+                ]
+            });
+
+
+            document.querySelectorAll(".go-to").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    player.currentTime = parseInt(btn.getAttribute("data-time"));
+                    player.play();
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

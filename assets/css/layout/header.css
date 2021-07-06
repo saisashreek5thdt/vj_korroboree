@@ -1,0 +1,177 @@
+.backimg{
+	background-image: url("../../images/ind_img.png") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    clear: both;
+}
+.front_btn{
+	text-transform: uppercase;
+	font-family: Montserrat semibold!important;
+	text-align: center;
+    word-spacing: 3px;
+    clear: both;
+}
+.explore_txt {
+    text-decoration: none;
+    position: absolute;
+    bottom: 55px;
+}
+  .explore_txt:hover {
+    text-decoration: none;
+    color: white;
+  }
+  #section05 a {
+	padding-top: 70px;
+  }
+  #section05 a span {
+	position: absolute;
+bottom: -20px;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb05 1.5s infinite;
+	animation: sdb05 1.5s infinite;
+	box-sizing: border-box;
+  clear: both;
+  }
+  @-webkit-keyframes sdb05 {
+	0% {
+	  -webkit-transform: rotate(-45deg) translate(0, 0);
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+	  opacity: 0;
+	}
+  }
+  @keyframes sdb05 {
+	0% {
+	  transform: rotate(-45deg) translate(0, 0);
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  transform: rotate(-45deg) translate(-20px, 20px);
+	  opacity: 0;
+	}
+  } 
+  .logo img {
+    height: auto;
+    width: 35%;
+    margin-top: -20px;
+    padding: -2px;
+    margin-left: -3px;
+}
+
+  .rick_back {
+    height: 32rem;
+    width: 27rem;
+    margin-top: 12px;
+    margin-left: 40px;
+    border-radius: 8px;
+    clear: both;
+    
+}
+.rick_back img {
+  height: auto;
+  width: 24rem;
+  clear: both;
+  margin-top: 30px;
+  clear: both;
+}
+.snd {
+    font-size: 20px;
+    margin-bottom: -17px;
+    margin-top: 14px;
+  }
+  .fst {
+    font-size: 24px;
+    margin-bottom: -17px;
+    margin-top: 11px;
+  }
+.introd {
+    height: 32rem;
+    width: 48rem;
+    margin-top: 12px;
+    border-radius: 8px;
+  }
+
+  .introd p {
+    text-align: center;
+    padding: 7px;
+    width: 90%;
+    margin-top: -7px;
+  }
+  .crcl{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  .nxt_pre_btn {
+    text-align: center;
+    padding: 6px;
+    position:fixed;
+    font-size: 25px;
+  }
+  .ico{
+    position: relative;
+    margin-top: -22px;
+  }
+  .ico img{
+    margin: 16px;
+    position:absolute;
+  }
+  .video_size {
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+}
+.seg_back{
+  width: 51%;
+  height: 5rem;
+  padding: 12px;
+  position: fixed;
+  border-radius: 5px;
+  margin-left: 39px;
+  margin-top: 20px;
+}
+.back {
+  text-decoration: none !important;
+  border-radius: 50%;
+  width: 51px;
+  float: left;
+  height: 51px;
+  padding: -2px;
+  font-size: 35.2px;
+  text-align: center;
+  position: fixed;
+}
+.next {
+  text-decoration: none !important;
+  border-radius: 50%;
+  width: 51px;
+  float: left;
+  height: 51px;
+  padding: -2px;
+  font-size: 35.2px;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+}
+  
